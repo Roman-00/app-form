@@ -1,0 +1,99 @@
+.signin-form {
+    width: 100%;
+    max-width: 375px;
+    padding: 16px;
+    border-radius: $radius-medium;
+    background: $white;
+    box-shadow: $box-shadow;
+
+    &__title {
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: $f-weight-semi;
+        line-height: 36px;
+        text-align: center;
+        color: $black-primary;
+    }
+
+    &__desc {
+        margin-bottom: 16px;
+        font-size: 13px;
+        font-weight: $f-weight-regular;
+        line-height: 20px;
+        text-align: center;
+        color: rgba($black-primary, 0.65);
+    }
+
+    &__inp-group,
+    &__inp {
+        width: 100%;
+    }
+
+    &__inp-group {
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    &__inp {
+        min-height: 36px;
+        padding: 0 8px 0 36px;
+        font-size: 16px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        border-radius: $radius;
+        border: 1px solid rgba($black-primary, 0.15);
+        color: $black-primary;
+        transition: border 0.5s ease;
+
+        &::placeholder {
+            font-size: 13px;
+            font-weight: $f-weight-regular;
+            line-height: 20px;
+        }
+
+        &:focus {
+            border: 1px solid $blue-primary;
+        }
+    }
+
+    &__inp-img {
+        position: absolute;
+        top: 56%;
+        left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-56%);
+    }
+
+    &__inp-img-eye {
+        position: absolute;
+        right: 8px;
+        top: 56%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-56%);
+        cursor: pointer;
+    }
+
+    &__btn-submit {
+        @include button-reset;
+
+        width: 100%;
+        min-height: 42px;
+        font-size: 16px;
+        font-weight: $radius;
+        line-height: 24px;
+        text-transform: lowercase;
+        border-radius: $radius;
+        background: $blue-primary;
+        color: $white;
+        transition: background 0.3s ease;
+
+        &:hover,
+        &:focus {
+            background: $blue-light;
+        }
+    }
+}

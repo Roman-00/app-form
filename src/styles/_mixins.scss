@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "sass:list";
+
+@mixin button-reset {
+    appearance: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
